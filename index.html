@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moody Shooter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game-container">
+        <canvas id="game-canvas"></canvas>
+        <div id="score-hud" class="hidden">SCORE: 0</div>
+        <div id="boost-hud" class="hidden">
+            <div id="boost-bar"></div>
+            <div id="boost-text">BOOST READY</div>
+        </div>
+        <div id="controls-tip" class="hidden">Tip: Use <b>WASD</b> to Move, <b>Left Click</b> to Shoot, <b>Right Click</b> to Boost</div>
+        <div id="controls-tip-mouse" class="hidden">Tip: Use <b>Mouse</b> to Move, <b>Left Click</b> to Shoot, <b>Right Click</b> to Boost</div>
+        <!-- Main Menu -->
+        <div id="main-menu" class="ui-layer">
+            <h1 class="title">ECHOES</h1>
+            <button id="play-btn" class="btn">PLAY</button>
+            <button id="settings-btn" class="btn">SETTINGS</button>
+        </div>
+
+        <!-- Settings Menu -->
+        <div id="settings-menu" class="ui-layer hidden">
+            <h2>SETTINGS</h2>
+            <div class="setting-row">
+                <span>Controls:</span>
+                <button id="toggle-controls-btn" class="btn small-btn">WASD</button>
+            </div>
+            <button id="back-btn" class="btn">BACK</button>
+        </div>
+
+        <!-- Game Over Screen -->
+        <div id="game-over" class="ui-layer hidden">
+            <h2 id="game-over-title">GAME OVER</h2>
+            <p id="game-over-score"></p>
+            <button id="restart-btn" class="btn">PLAY AGAIN</button>
+            <button id="menu-btn" class="btn">MAIN MENU</button>
+        </div>
+    </div>
+
+    <script src="input.js"></script>
+    <script src="entities.js"></script>
+    <script src="game.js"></script>
+</body>
+</html>
