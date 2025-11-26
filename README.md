@@ -34,3 +34,8 @@ This project is open source and available under the [MIT License](LICENSE).
 ## 📝 Contact
 
 For any inquiries or feedback, please contact me at anifanks98@gmail.com
+
+
+Screenshots:
+<img width="1147" height="906" alt="image" src="https://github.com/user-attachments/assets/bef27e02-8aa6-4ff2-8b77-7a205378093b" />
+
